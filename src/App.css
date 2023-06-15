@@ -1,0 +1,205 @@
+.card-front img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-front #logo {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  z-index: 1;
+}
+
+.card-back img {
+  position: absolute;
+  top: 320px;
+  left: 70px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* article {
+  background-color: black;
+  color: white;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+  height: 100vh;
+  background: linear-gradient(
+      39.94deg,
+      rgba(69, 26, 78, 0.2) 47.82%,
+      rgba(60, 13, 13, 0.2) 82.37%
+    ),
+    linear-gradient(
+      164.67deg,
+      rgba(22, 4, 31, 0.98) 4.47%,
+      #380c4a 15.5%,
+      #3b0e46 19.19%,
+      #3d0f42 23.38%,
+      #441436 30.26%,
+      #33254e 36.4%,
+      #2b2d59 42.79%,
+      #292654 47.99%,
+      #271f4f 52.8%,
+      #240d37 64.72%,
+      #22052d 79.1%
+    );
+}
+
+.right {
+  width: 75%;
+
+  /* align-items: center;
+  display: flex;
+  max-height: 100vh;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+
+.card-component {
+  display: flex;
+  /* max-width: 100%;
+  max-height: 100%; */
+  flex-direction: column;
+  justify-content: center;
+  position: static;
+  /* top: 10rem;
+  right: 18rem; */
+  width: 400px;
+  margin: 30vh auto;
+}
+
+/* .card-component div input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+} */
+
+#chname input {
+  width: 100%;
+  padding: 10px;
+}
+
+#chnumber input {
+  width: 100%;
+  padding: 10px;
+}
+
+#chexpdate label {
+  /* background: wheat; */
+  padding: 0px 0px;
+  margin-right: 4rem;
+}
+
+#chexpdate input {
+  padding: 10px;
+  /* margin-right: 3rem; */
+  display: flex;
+}
+#chexpdate div {
+  display: flex;
+}
+#chexpdate #mm,
+#yy {
+  width: 25%;
+  margin-right: 10px;
+  /* margin: 10px 0px; */
+}
+
+#cvc {
+  width: 70%;
+}
+
+.card-component button {
+  background: black;
+  color: white;
+  margin: 10px 0px;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#nameOfCardHolder {
+  color: white;
+  position: fixed;
+  top: 15rem;
+  right: 87rem;
+  z-index: 1;
+}
+
+#numberOfCreditCard {
+  color: white;
+  position: fixed;
+  top: 10rem;
+  right: 69rem;
+  letter-spacing: 2px;
+
+  font-size: xx-large;
+  z-index: 1;
+}
+
+#cardExpMonth {
+  color: white;
+  position: fixed;
+  top: 15rem;
+  right: 70.7rem;
+  z-index: 1;
+}
+
+#cardExpYear {
+  color: white;
+  position: fixed;
+  top: 15rem;
+  right: 69.5rem;
+  z-index: 1;
+}
+
+#cvcNumber {
+  color: white;
+  position: fixed;
+  top: 31rem;
+  right: 64.5rem;
+  z-index: 1;
+}
+
+#errorname,
+#errorcardNo,
+#monthnum,
+#yearnum,
+#cvcnum {
+  color: red;
+}
+@media screen and (max-width: 974px) and (min-width: 200px) {
+  .card-front img {
+    max-width: calc(20rem);
+    position: static;
+  }
+
+  .card-back img {
+    max-width: 50%;
+    position: relative;
+  }
+  .card-component {
+    width: 100%;
+    position: fixed;
+  }
+}
